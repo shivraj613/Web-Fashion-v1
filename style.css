@@ -2365,6 +2365,22 @@ img {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form-column {
+        width: 100%;
+        margin-left: 0;
+        height: auto !important;
+    }
+
+    .yellow-form .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2483,6 +2499,30 @@ img {
         background: #fff;
         border-radius: 10px;
         border-top: 4px solid #FF6F61;
+        padding: 25px;
+    }
+
+    .hero-form-wrapper h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .hero-form-wrapper .form-group {
+        margin-bottom: 15px;
+    }
+
+    .hero-form-wrapper input,
+    .hero-form-wrapper select,
+    .hero-form-wrapper textarea {
+        padding: 12px 15px 12px 40px;
+        /* Adjust padding for icon */
+        font-size: 16px;
+        /* Prevent zoom on iOS */
+    }
+
+    .hero-form-wrapper .submit-btn {
+        padding: 15px;
+        font-size: 16px;
     }
 
     .slide-content {
@@ -2596,7 +2636,7 @@ img {
 
 @media (max-width: 480px) {
     .hero-slider {
-        height: 450px;
+        height: auto;
     }
 
     .slide-content h1 {
@@ -2638,9 +2678,4 @@ img {
         width: 45px;
         height: 45px;
     }
-}
-
-/* Add padding at bottom for fixed buttons */
-body {
-    padding-bottom: 65px;
 }
