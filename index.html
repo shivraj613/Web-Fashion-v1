@@ -19,7 +19,7 @@
     />
   </head>
 
-  <body>
+  <body id="home">
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="container">
@@ -53,7 +53,7 @@
           </div>
           <nav class="nav">
             <ul class="nav-menu">
-              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#home" class="active">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li class="dropdown">
                 <span class="dropdown-toggle">Our Products</span>
@@ -68,7 +68,11 @@
                   <li><a href="#videos">Videos</a></li>
                 </ul>
               </li>
-              <li><a href="#">E-Catalogue</a></li>
+              <li>
+                <a href="https://www.vaba.co.in/Catalogue_new.pdf"
+                  >E-Catalogue</a
+                >
+              </li>
               <li><a href="#blogs">Blogs</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -137,9 +141,61 @@
         <div class="shape shape-2"></div>
         <div class="shape shape-3"></div>
       </div>
+
+      <!-- Hero Contact Form Overlay -->
+      <div class="container hero-form-container">
+        <div class="hero-form-wrapper reveal-right">
+          <h2>Request Call Back</h2>
+          <form class="callback-form" id="heroCallbackForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="heroFullName"
+                placeholder="Your full name"
+                required
+              />
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="heroMobile"
+                placeholder="Mobile Number"
+                required
+              />
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="form-group">
+              <select id="heroLocation" required>
+                <option value="">Select Location</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+                <option value="delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="other">Other</option>
+              </select>
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="heroMessage"
+                placeholder="Message"
+                rows="2"
+                required
+              ></textarea>
+              <i class="fas fa-comment-alt"></i>
+            </div>
+            <button type="submit" class="submit-btn">
+              <span>SUBMIT</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
-    <!-- Stats Counter Section -->
+    <!-- Request A Call Back Section (Moved to Hero) -->
+
     <section class="stats-section">
       <div class="container">
         <div class="stats-grid">
@@ -567,7 +623,7 @@
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/I2rWKPs0wF4"
+              src="https://www.youtube.com/embed/HWmyzg56-nQ"
               title="Formwork Installation Video"
               frameborder="0"
               allow="
@@ -583,173 +639,205 @@
             >
             </iframe>
           </div>
-          <div
-            class="video-item reveal-up video-placeholder"
-            style="animation-delay: 0.1s"
-          >
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/I2rWKPs0wF4"
-              title="Formwork Installation Video"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div
-            class="video-item reveal-up video-placeholder"
-            style="animation-delay: 0.1s"
-          >
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/I2rWKPs0wF4"
-              title="Formwork Installation Video"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Request A Call Back Section -->
-    <section class="callback-section" id="callback">
-      <div class="container">
-        <div class="callback-wrapper">
-          <div class="callback-image reveal-left">
-            <div class="callback-image-placeholder">
-              <i class="fas fa-headset"></i>
-              <h3>Get In Touch</h3>
-              <p>We're here to help you with your formwork needs</p>
-              <div class="callback-features">
-                <div class="cb-feature">
-                  <i class="fas fa-clock"></i>
-                  <span>24/7 Support</span>
-                </div>
-                <div class="cb-feature">
-                  <i class="fas fa-phone-alt"></i>
-                  <span>Quick Response</span>
-                </div>
-                <div class="cb-feature">
-                  <i class="fas fa-user-tie"></i>
-                  <span>Expert Consultation</span>
-                </div>
-              </div>
-            </div>
+          <div
+            class="video-item reveal-up video-placeholder"
+            style="animation-delay: 0.1s"
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/b-oHSWr-zfw"
+              title="Formwork Installation Video"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
           </div>
-          <div class="callback-form-container reveal-right">
-            <h2>Request A Call Back</h2>
-            <form class="callback-form" id="callbackForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="fullName"
-                  placeholder="Your full name"
-                  required
-                />
-                <i class="fas fa-user"></i>
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="example@example.com"
-                  required
-                />
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="form-group">
-                <input
-                  type="tel"
-                  id="mobile"
-                  placeholder="Mobile Number"
-                  required
-                />
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="form-group">
-                <select id="location" required>
-                  <option value="">Select Location</option>
-                  <option value="mumbai">Mumbai</option>
-                  <option value="pune">Pune</option>
-                  <option value="delhi">Delhi</option>
-                  <option value="bangalore">Bangalore</option>
-                  <option value="chennai">Chennai</option>
-                  <option value="hyderabad">Hyderabad</option>
-                  <option value="kolkata">Kolkata</option>
-                  <option value="ahmednagar">Ahmednagar</option>
-                  <option value="aurangabad">Aurangabad</option>
-                  <option value="kolhapur">Kolhapur</option>
-                  <option value="nagpur">Nagpur</option>
-                  <option value="other">Other</option>
-                </select>
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  placeholder="Enter your message"
-                  rows="4"
-                  required
-                ></textarea>
-                <i class="fas fa-comment-alt"></i>
-              </div>
-              <div class="form-group checkbox-group">
-                <label class="custom-checkbox">
-                  <input type="checkbox" id="notRobot" required />
-                  <span class="checkmark"></span>
-                  <span class="checkbox-text">I'm not a robot</span>
-                </label>
-              </div>
-              <button type="submit" class="submit-btn">
-                <span>SUBMIT</span>
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
+
+          <div
+            class="video-item reveal-up video-placeholder"
+            style="animation-delay: 0.2s"
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/tcIdZ2kAJEw"
+              title="Formwork Installation Video"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div
+            class="video-item reveal-up video-placeholder"
+            style="animation-delay: 0.2s"
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/tcIdZ2kAJEw"
+              title="Formwork Installation Video"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div
+            class="video-item reveal-up video-placeholder"
+            style="animation-delay: 0.3s"
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/tcIdZ2kAJEw"
+              title="Formwork Installation Video"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Contact Detailed Section -->
+    <section class="contact-detailed-section" id="contact">
+      <div class="section-header">
+        <span class="section-tag">Watch Us</span>
+        <h2>Contact Us</h2>
+        <div class="underline"></div>
+      </div>
       <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Start Your Project?</h2>
-          <p>
-            Contact us today for a free consultation and quote for your formwork
-            needs.
-          </p>
-          <div class="cta-buttons">
-            <a href="tel:+919820083569" class="btn-primary"
-              ><i class="fas fa-phone"></i> Call Now</a
-            >
-            <a href="#callback" class="btn-outline"
-              ><i class="fas fa-envelope"></i> Get Quote</a
-            >
+        <div class="contact-wrapper">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-column">
+            <div class="contact-block">
+              <h3>Factory Address</h3>
+              <p>
+                17/4 and 17/5, MIDC Taloja Industrial Estate, Navi Mumbai,
+                Maharashtra 410208.
+              </p>
+            </div>
+
+            <div class="contact-block">
+              <h3>Head Office</h3>
+              <p>
+                Office No. 909, Signature Business Park, K.A.Gaikwad Marg,
+                Postal Colony Road, Chembur East, Mumbai - 400071. INDIA.
+              </p>
+            </div>
+
+            <div class="contact-block">
+              <h3>General Manager</h3>
+              <p class="person-name">Rajeev Sareen: +91 9004200802</p>
+              <a href="mailto:business@vaba.co.in" class="person-email"
+                >business@vaba.co.in</a
+              >
+            </div>
+
+            <div class="contact-block">
+              <h3>Partner</h3>
+              <p class="person-name">Vansh Bansal: +91 9930505900</p>
+              <a href="mailto:vansh@vaba.co.in" class="person-email"
+                >vansh@vaba.co.in</a
+              >
+            </div>
+
+            <div class="contact-block">
+              <h3>Chairman</h3>
+              <p class="person-name">Tony Bansal: +91 9820083569</p>
+              <a href="mailto:tony@bsi.co.in" class="person-email"
+                >tony@bsi.co.in</a
+              >
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-column">
+            <form class="yellow-form">
+              <div class="form-row">
+                <input type="text" placeholder="Enter your name" required />
+                <input type="tel" placeholder="Enter mobile" required />
+              </div>
+              <div class="form-row">
+                <input type="email" placeholder="Enter your email" required />
+              </div>
+              <div class="form-row">
+                <textarea
+                  placeholder="Type your message here"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="captcha-box">
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <span class="checkbox-text">I'm not a robot</span>
+                </label>
+                <div class="captcha-logo">
+                  <i class="fas fa-sync-alt"></i>
+                  <span>reCAPTCHA</span>
+                  <small>Privacy - Terms</small>
+                </div>
+              </div>
+
+              <button type="submit" class="black-btn">SEND MESSAGE</button>
+            </form>
           </div>
         </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="contact-map-row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.832777169865!2d72.89736231490104!3d19.06828598709328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c627a20baf93%3A0x9ce7a2290453006!2sSignature%20Business%20Park!5e0!3m2!1sen!2sin!4v1625838528956!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
       </div>
     </section>
 
@@ -799,7 +887,11 @@
               <li><a href="#products">Products</a></li>
               <li><a href="#gallery">Images</a></li>
               <li><a href="#gallery">Videos</a></li>
-              <li><a href="#">E-Catalogue</a></li>
+              <li>
+                <a href="https://www.vaba.co.in/Catalogue_new.pdf"
+                  >E-Catalogue</a
+                >
+              </li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
@@ -917,6 +1009,18 @@
       mobileMenuBtn.addEventListener("click", () => {
         navMenu.classList.toggle("active");
         mobileMenuBtn.classList.toggle("active");
+      });
+
+      // Mobile Dropdown Toggle
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach((dropdown) => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        toggle.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.classList.toggle("active");
+          }
+        });
       });
 
       // Header scroll effect
