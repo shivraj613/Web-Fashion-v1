@@ -1617,6 +1617,7 @@ img {
 /* Map Row */
 .contact-map-row {
     line-height: 0;
+    padding-bottom: 50px;
 }
 
 .contact-map-row iframe {
