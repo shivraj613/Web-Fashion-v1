@@ -156,6 +156,12 @@ img {
     align-items: flex-start;
 }
 
+.logo img {
+    height: 70px;
+    width: auto;
+    max-width: 100%;
+}
+
 .logo-text {
     font-size: 32px;
     font-weight: 800;
@@ -2080,6 +2086,13 @@ img {
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+}
+
+.footer-logo-box img {
+    height: 90px;
+    width: auto;
+    max-width: 100%;
+    margin-top: -10px;
 }
 
 .footer-logo-text {
